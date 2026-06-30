@@ -322,10 +322,10 @@ export default function ChecklistPage({ onNavigate }: ChecklistPageProps) {
                   </motion.div>
                 ))}
               </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+           {lista.map((item, index) => (
+  <motion.div key={index}>
+    <div>
+      {item.nome}
     </div>
-  );
-}
+  </motion.div>
+))}
